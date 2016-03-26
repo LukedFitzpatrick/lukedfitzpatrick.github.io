@@ -1,35 +1,36 @@
 </html>
 <head>
-<title> Luke Fitzpatrick's Portfolio </title>
+<title> Luke Fitzpatrick Portfolio </title>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
 <style>
-body {
-   background: url(bg.png) repeat;
-   margin-left: 10%;
-   margin-right: 10%;
-   margin-top: 20%;
-}
+
 h1 {
-   color: #101010;
+   color: #fafcf5;
    font-size: 30px;
    text-decoration: none;
    font-weight: normal;
-   font-family: 'Open Sans',sans-serif;
+   font-family: 'Montserrat', sans-serif;
+   text-align:center;
 }
+  
 h2 {
-   color: #707070;
+   color: #fafcf5;
+   font-size: 16px;
+   text-decoration: none;
+   font-weight: normal;
+   font-family: 'Montserrat', sans-serif;
+   text-align:center;
+}
+body {
+   margin:0px;
+   padding:0px;
+   color: #101010;
    font-size: 18px;
    text-decoration: none;
    font-weight: normal;
    font-family: 'Open Sans',sans-serif;
-
-}
-h3 {
-   color: #101010;
-   font-size: 16px;
-   text-decoration: none;
-   font-weight: normal;
-   font-family: 'Open Sans',sans-serif;
+   line-height:normal;
 }
 
 a {
@@ -38,69 +39,82 @@ a {
    text-decoration: underline;
    font-weight: normal;
    font-family: 'Open Sans',sans-serif;
-
-
 }
 
+#Project {
+   padding-top:10%;
+   padding-bottom:10%;
+   padding-right:10%;
+   padding-left:10%;
+   background-color: #f4f4f2;
+}
+#Top {
+   background-image: url('bluebg.png');
+   padding-top:2%;
+   padding-right:10%;
+   padding-bottom:1%;
+   padding-left:10%;
+}
 #Music {
    border-radius: 25px;
    background-size: cover;
    background-image: url('images/music.png');
-   height: 250px;
+   height: 25%;
+
 }
 
 #Music:hover {
    background-image: url('images/music.gif');
-   height: 600px;
+   height: 50%;
 }
 
 #NRL {
    border-radius: 25px;
    background-size: cover;
    background-image: url('images/nrl.png');
-   height: 250px;
+   height: 25%;
 }
 
 #NRL:hover {
    background-image: url('images/nrl.gif');
-   height: 600px;
+   height: 50%;
 }
 
 #Bandnames {
    border-radius: 25px;
    background-size: cover;
    background-image: url('images/bandnames.png');
-   height: 250px;
+   height: 25%;
 }
 
 #Bandnames:hover {
    background-image: url('images/bandnames.gif');
-   height: 600px;
+   height: 50%;
 }
 
 #Platformer {
    border-radius: 25px;
    background-size: cover;
    background-image: url('images/platformer.png');
-   height: 250px;
+   height: 25%;
 }
 
 #Platformer:hover {
    background-image: url('images/platformer.gif');
-   height: 600px;
+   height: 50%;
 }
 
 #Liftsim {
    border-radius: 25px;
    background-size: cover;
    background-image: url('images/liftsim.png');
-   height: 250px;
+   height: 25%;
 }
 
 #Liftsim:hover {
    background-size: contain;
    background-image: url('images/liftsim.gif');
-   height: 600px;
+   height: 50%;
 }
 
 
@@ -109,36 +123,46 @@ a {
 </head>
 
 <body>
-<h1> luke fitzpatrick's portfolio </h1>
-<h2> (hover mouse over a project to see it in action, clicking on the image takes you to the project's Github repository or webpage) </h2>
+<div id="Top">
+<h1> LUKE FITZPATRICK'S PORTFOLIO </h1>
+<h2> hover over image to see project in action </h2>
+</div>
 
-<br/> <br/> <br/> <br/> <br/> <br/>
-<h3> Ongoing project: Scraping online NRL match statistics using Python and lxml.</h3>
-<a href="https://github.com/LukedFitzpatrick/nrlnotebook">
-<div id="NRL"></div> </a>
-
-
-<br/> <br/> <br/> <br/> <br/> <br/>
-<h3> February 2016:  I created a simple music ratings website using HTML/CSS.  </h3>
-<a href="http://lukedfitzpatrick.github.io/music-for-walking">
-<div id="Music"></div> </a>
+<div id="Project" style="border-left:12px solid #f8f376">
+<span style="color:#707070">Ongoing project: </span> I'm working on scraping and analysing NRL match statistics using <span style="color:green">Python</span> and <span style="color:#004400">lxml</span>. (<a href="https://github.com/LukedFitzpatrick/nrlnotebook">Github Repository</a>)
+<br/> <br/>
+<div id="NRL"></div> 
+</div>
 
 
-<br/> <br/> <br/> <br/> <br/> <br/>
-<h3> February 2016:  I created a band and song name generator using C++.  </h3>
-<a href="https://github.com/LukedFitzpatrick/studio">
-<div id="Bandnames"></div> </a>
+<div id="Project" style="border-left:12px solid #7ec1ca">
+<span style="color:#707070">February 2016</span> I created a simple music ratings website using <span style="color:#cc3300">HTML/CSS</span>
+(<a href="http://lukedfitzpatrick.github.io/music-for-walking">The website</a>)
+<br/> <br/>
+<div id="Music"></div> 
+</div>
 
-<br/> <br/> <br/> <br/> <br/> <br/>
-<h3> December 2015:  I created a platformer game engine using Python and Pygame. It supports live level editing, level storage, key rebinding,
-  a physics and collision engine, and a robust graphics handling system including support for animation.  </h3>
-<a href="https://github.com/LukedFitzpatrick/platformer">
-<div id="Platformer"></div> </a>
 
-<br/> <br/> <br/> <br/> <br/> <br/>
-<h3> November 2015:  I created a game about elevators using Python and Pygame. To help with this, I also made a little animation preview tool using Pygame. </h3>
-<a href="https://github.com/LukedFitzpatrick/liftsim">
-<div id="Liftsim"></div> </a>
+<div id="Project" style="border-left:12px solid #c22d2d">
+<span style="color:#707070">February 2016</span>  I created a band and song name generator using <span style="color:#6600cc">C++</span>.
+(<a href="https://github.com/LukedFitzpatrick/studio">Github Repository</a>)
+<br/> <br/>
+<div id="Bandnames"></div> 
+</div>
+
+
+<div id="Project" style="border-left:12px solid #7db169">
+<span style="color:#707070">December 2015</span> I created a platformer game engine using <span style="color:green">Python</span> and <span style="color:green">Pygame</span>. It supports live level editing, level storage, key rebinding, a physics and collision engine, and a robust graphics handling system including support for animation. (<a href="https://github.com/LukedFitzpatrick/platformer">Github Repository</a>)
+<br/><br/>
+<div id="Platformer"></div>
+</div>
+
+<div id="Project" style="border-left:12px solid #1e1c31">
+<span style="color:#707070">November 2015</span> I created a game where you control elevators using <span style="color:green">Python</span> and <span style="color:green">Pygame</span>. To help with this, I also made a little animation preview tool.
+(<a href="https://github.com/LukedFitzpatrick/liftsim">Github Repository</a>)
+<br/><br/>
+<div id="Liftsim"></div>
+</div>
 
 
 </body>
